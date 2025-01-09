@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let username=prompt("Enter username :");
+        let Password=prompt("Enter password :");
+        if(username !== null && Password !==null){
+            let con=confirm("continue to login");
+            if(con!==false){
+                alert("login was successfully done");
+            }
+            else{
+                alert("try again after some time");
+            }
+        }
+        else{
+            alert("invalid try again");
+        }
+    </script>
+</body>
+</html>

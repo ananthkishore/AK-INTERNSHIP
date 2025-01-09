@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title> 
+    <style>
+        div {
+            margin: 10% 35%;
+            border: 23px solid rgb(241, 125, 24);
+            width: 300px;
+            height: 300px;
+        }
+        form {
+            text-align: center;
+        }
+        input {
+            margin: 25px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-box">
+        <form id="login-form" >
+            <h1>Login</h1>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username" required><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required><br>
+            <button onclick="action1()" type="button">Submit</button>
+        </form>
+    </div>
+    <h1 id="message"></h1>
+    <script>
+            function action1(){
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            if(username && password){
+                document.getElementById("login-box").style.display = 'none';
+                document.getElementById("message").innerHTML = 'Login was successfully';
+            }
+        }
+    </script>
+</body>
+</html>

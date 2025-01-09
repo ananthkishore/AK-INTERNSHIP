@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Array in Table</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #dddddd;
+            text-align: center;
+        }
+        th {
+            background-color: #6dd638;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">User Data</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script>
+        const users = [
+            { name: 'kishore', email: 'kishore@example.com' },
+            {name: 'Ananth', email: 'ananth@example.com' },
+            {  name: 'Davis', email: 'charlie@example.com' }];
+        const tableBody = document.getElementById('table-body');
+    
+        users.forEach(user => {
+            const row = `<tr>
+                        <td>${user.name}</td>
+                        <td>${user.email}</td>
+                        </tr>`;
+                tableBody.innerHTML += row;
+            });
+        
+    </script>
+
+</body>
+</html>
