@@ -4,6 +4,9 @@ class Gallery extends React.Component {
     render() {
         return (
             <div>
+                <h2>
+                    
+                </h2>
                 <button>Gallery</button>
             </div>
         );
