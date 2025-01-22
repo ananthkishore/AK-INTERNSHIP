@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
+import App from './App.jsx'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import Home from './components/functionalComponents/home.jsx'
 import About from './components/functionalComponents/about.jsx'
 import ClassComponent from './components/classComponents/eg.jsx'

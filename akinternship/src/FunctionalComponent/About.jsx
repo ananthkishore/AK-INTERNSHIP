@@ -1,5 +1,5 @@
 
-import {useState} from "react";
+import {Component, useState} from "react";
 //Event Handling 
 const About = () => {
     var [text,setText]=useState("Vijay")
