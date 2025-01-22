@@ -19,6 +19,7 @@ const navbar_day8=()=>{
                 <li><Link  to='/about' className='link'> About</Link></li>
                 <li><Link to='/gallery' className='link'>Gallery</Link></li>
                 <li><Link to='' className='link'>Contact</Link></li>
+                <li><Link to='/use-effect-api' className="link">use-effect-api</Link></li>
                 <div>
                     <span onMouseEnter={()=>{ShowDropdown(true)}} >HOOKS</span> 
                     {dropdown && <ul onMouseLeave={()=>{ShowDropdown(false)}}>
