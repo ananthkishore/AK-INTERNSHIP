@@ -1,4 +1,3 @@
-
 import { useState ,useEffect} from "react"
 import NavBar from "../navBar"
 import axios from 'axios'
