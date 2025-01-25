@@ -11,7 +11,7 @@ return (
 <li className="dropdown">
 <span className="link">Hooks</span>
 <div className="hooks">
-                            <li><Link to='/react-lcm' className="link">React-life-cycle</Link></li>
+<li><Link to='/react-lcm' className="link">React-life-cycle</Link></li>
 <li><Link to='/usestate' className="link">useState</Link></li>
 <li><Link to='/use-effect' className="link">use-effect</Link></li>
 <li><Link to='/use-effect-api' className="link">use-effect-api</Link></li>
@@ -20,6 +20,13 @@ return (
 <li><Link to='/use-ref' className="link">use-ref</Link></li>
 <li><Link to='/use-memo' className="link">use-memo</Link></li>
 <li><Link to='/use-callback' className="link">use-callback</Link></li>
+                            <li><Link to='/use-context' className="link">use-context</Link></li>
+                            </div>
+                        </li>
+                        <li className="dropdown">
+                            <span className="link">Memoization</span>
+                            <div className="hooks">
+                            <li><Link to='/memo' className="link">React.Memo</Link></li>
 </div>
 </li>
 
