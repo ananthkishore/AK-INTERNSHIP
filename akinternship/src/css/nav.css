@@ -1,63 +1,66 @@
 
 header{
-    padding: 3px;
-    background-color: aqua;
+  padding: 3px;
+  background-color: aqua;
   }
-    nav ul{
-      
-      text-decoration: none;
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
+  nav ul{
   
-    }
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  
+  }
   .link{
-    text-decoration: none;
-    padding: 3px;
+  text-decoration: none;
+  padding: 3px;
   }
   
   .link:hover{
-    background-color: antiquewhite;
+  background-color: antiquewhite;
   }
   .dropdown {
-    position: relative;
+  position: relative;
   }
   
-  .hooks {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 7px;
-    background-color: #f4d0d0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 4px;
+  .Hooks {
+  .dropDownContent {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  border-radius: 4px;
   }
+}
+
+  .Hooks .link {
+  .dropDownContent .link {
+  display: block;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  }
+}
   
-  .hooks .link {
-    display: block;
-    padding: 5px 10px;
-    color: black;
-    text-decoration: none;
+  .dropdown:hover .Hooks {
+  .dropdown:hover .dropDownContent {
+  display: block;
   }
-  
-  .dropdown:hover .hooks {
-    display: block;
+}
+  .Hooks .link:hover {
+  .dropDownContent .link:hover {
+  background-color: #88d1f0;
   }
-  
-  .hooks .link:hover {
-    background-color: #88d1f0;
-  }
+}
   .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   
   }
   .items-of-grid{
-    height: 200px;
-    width:200px;
+  height: 200px;
+  width:200px;
   }
   .items-of-grid img{
-    height: 200px;
-    width:200px;
+  height: 200px;
+  width:200px;
   }
