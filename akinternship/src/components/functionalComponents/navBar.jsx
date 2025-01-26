@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "../../css/nav.css"
-const NavBar=()=>{
+const navBar=()=>{
 return (
 <header>
 <nav>
@@ -20,13 +20,14 @@ return (
 <li><Link to='/use-ref' className="link">use-ref</Link></li>
 <li><Link to='/use-memo' className="link">use-memo</Link></li>
 <li><Link to='/use-callback' className="link">use-callback</Link></li>
-                            <li><Link to='/use-context' className="link">use-context</Link></li>
-                            </div>
-                        </li>
-                        <li className="dropdown">
-                            <span className="link">Memoization</span>
-                            <div className="hooks">
-                            <li><Link to='/memo' className="link">React.Memo</Link></li>
+<li><Link to='/use-context' className="link">use-context</Link></li>
+</div>
+</li>
+<li className="dropdown">
+<span className="link">Memoization</span>
+<div className="hooks">
+<li><Link to='/memo' className="link">React.Memo</Link></li>
+                            <li><Link to='/lazy' className="link">Lazy,Suspense</Link></li>
 </div>
 </li>
 
