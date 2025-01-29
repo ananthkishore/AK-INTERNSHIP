@@ -15,12 +15,13 @@ import UseRef from './components/functionalComponents/Hooks/useRef.jsx'
 import UseMemo from './components/functionalComponents/Hooks/useMemo.jsx'
 import UseCallBack from './components/functionalComponents/Hooks/useCallback.jsx'
 import ReactLifecycleMethods from './components/classComponents/react-life-cycle.jsx'
-import Usecontext from './components/functionalComponents/Hooks/usecontext.jsx'
-import Memo from './components/Memoization/Memo.jsx'
+import Usecontext from './components/functionalComponents/Hooks/usecontext.js'
+import Memo from './components/Memoization/Memo.js'
 import LazyLoading from './components/Memoization/LazyLodingAndSuspense.jsx'
-import UseLocalStorage from './components/functionalComponents/customHooks/useLocalStorage.jsx'
+import UseLocalStorage from './components/functionalComponents/customHooks/useLocalStorage.js'
 import HoC from './components/functionalComponents/HOC/hoc.jsx'
-import ApiData from './components/functionalComponents/customHooks/fectdata.jsx'
+import ApiData from './components/functionalComponents/customHooks/fectdata.js'
+import Login from './components/functionalComponents/login.jsx'
 
 createRoot(document.getElementById('root')).render(
 <StrictMode>
@@ -46,6 +47,8 @@ createRoot(document.getElementById('root')).render(
 <Route path='/customHook' element={<UseLocalStorage/>}></Route>
 <Route path='/hoc' element={<HoC/>}></Route>
       <Route path='/custom-useApi-hook' element={<ApiData/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+
 </Routes>
 
 </BrowserRouter>

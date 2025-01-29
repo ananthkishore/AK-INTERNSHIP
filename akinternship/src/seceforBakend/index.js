@@ -1,8 +1,8 @@
 const express=require("express");
 const path=require("path");
-const mdb=require("mongoose");
+const mdb=require('mongoose');
 const dotenv=require("dotenv");
-let  Signup = require("./models/signupSchema");
+let  Signup = require('./models/signupSchema');
 const app=express();
 app.use(express.json())
 dotenv.config();
@@ -21,7 +21,6 @@ app.get('/static',(req,res)=>{
 app.get('/json',(req,res)=>{
     res.json({"Name":"ANANTH KISHORE.S"});
 });
-
 app.post('/signup', async (req,res)=>{
     var {firstName,lastName,username,email,password}=req.body;
     console.log(req.body)
@@ -33,14 +32,23 @@ app.post('/signup', async (req,res)=>{
         email:email,
         password:password,
     });
+
+
+
+
+
+
+
+    
     console.log(newCustomer);
     await newCustomer.save()
     .then((res)=>{console.log(res)});
     res.status(201).send("Signup was  Sucessfully created.");
  }catch(err){
-    res.status(400).send("Please try again for signUp some",err);
+    res.status(400).send("Please try again for signUp",err);
  }
 });
+  
 
 app.listen(1001,()=>{
     console.log("Server Started");

@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom"
 import "../../css/signUp.css"
-const Signup=()=>{
+const Login=()=>{
     return (
     
         <div className="signup">
-            <form>
-                <div className="input">
-                    <label htmlFor="Name">Name</label>
-                    <input type="text" name="Name" placeholder="enter your name" required/>
-                </div>
+            <form method="post" action="http://localhost:3001/login">
                 <div className="input">
                     <label htmlFor="email">Email</label>
                     <input type="text" name="email" placeholder="enter your email" required/>
@@ -17,15 +13,12 @@ const Signup=()=>{
                     <label htmlFor="password">Password</label>
                     <input type="text" name="password" placeholder="enter your password" required/>
                 </div>
-                <Link to='/home' className="btn">Submit</Link>
-                <Link to='/home' className="btn">Submit</Link>
-                <button>submit</button>
-                <Link to='/home' className="btn" >Submit</Link>
-                <Link to='/login' className="btn">Login?</Link>
+                <button>login</button>
+                <Link to='/home' className="btn">Login</Link>
             </form>
         </div>
         
     )
 }
 
-export default Signup
+export default Login
