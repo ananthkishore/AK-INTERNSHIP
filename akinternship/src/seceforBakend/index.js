@@ -1,6 +1,7 @@
 const express=require("express");
 const path=require("path");
 const mdb=require('mongoose');
+const bcrypt=require("bcrypt")
 const dotenv=require("dotenv");
 let  Signup = require('./models/signupSchema');
 const app=express();
@@ -10,6 +11,7 @@ dotenv.config();
 mdb.connect(process.env.MONGODB_URL).then(()=>{
     console.log("Done successfully for MongoDB Connection.")
 }).catch((e)=>{
+    console.log(err)
     console.log("Not connect properly for MongoDB Connection ",e);
 })
 app.get('/',(req,res)=>{
@@ -31,6 +33,7 @@ app.post('/signup', async (req,res)=>{
         username:username,
         email:email,
         password:password,
+        password:hashedpassword,
     });
 
 
