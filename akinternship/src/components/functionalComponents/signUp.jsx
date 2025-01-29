@@ -1,31 +1,34 @@
+
 import { Link } from "react-router-dom"
 import "../../css/signUp.css"
 const Signup=()=>{
     return (
-    
+
         <div className="signup">
-            <form>
-                <div className="input">
-                    <label htmlFor="Name">Name</label>
-                    <input type="text" name="Name" placeholder="Enter your name" required/>
+            
+            <form method="post" action="http://localhost:3001/signup">
+            <div className="input">
+                    <label htmlFor="name">firstName</label>
+                    <input type="text" name="firstname" placeholder="enter your firstname" required/>
                 </div>
                 <div className="input">
-                    <label htmlFor="email">Email</label>
-                    <input type="text" name="email" placeholder="Enter your email" required/>
-                </div>
-                <div className="input">
+                    <label htmlFor="name">lastName</label>
+                    <input type="text" name="lastname" placeholder="enter your lastnamename" required/> 
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name="name" placeholder="enter your name" required/>
+                    
                     <label htmlFor="password">Password</label>
-                    <input type="text" name="password" placeholder="Enter your password" required/>
+                    <input type="text" name="password" placeholder="enter your password" required/>
+                    <label htmlFor="password">Confirm Password</label>
+                    <input type="text" name="password" placeholder="confirm your password" required/>
                 </div>
                 <Link to='/home' className="btn">Submit</Link>
-                <Link to='/home' className="btn">Submit</Link>
-                <button>submit</button>
-                <Link to='/home' className="btn" >Submit</Link>
-                <Link to='/login' className="btn">Login?</Link>
+                
+                {/*<Link to='/home' className="btn" >Submit</Link>
+                <Link to='/login' className="btn">Login?</Link>*/}
             </form>
         </div>
-        
+
     )
 }
-
-export default Signup
+export default Signup;
